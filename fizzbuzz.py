@@ -24,4 +24,32 @@ function oddRange(end) {
 }
 """
 def oddRange(n):
-    list = []
+    list = [] 
+    for i in range(1, len(n), 2):
+       list.append(i)
+    return list
+
+
+print(oddRange([1,2,3,4,5,6,7,8]))
+
+"""
+function catBuilder(name, color, toys) {
+  const cat = {
+    name: name,
+    color: color,
+    toys: toys
+  };
+
+  return cat;
+}
+"""
+
+def cat_builder(name, color, toys):
+    cat = {
+        "name": name,
+        "color": color ,
+        "toys": toys
+    }
+    return cat
+
+print(cat_builder('tom', 'grey', 'jerry'))    
